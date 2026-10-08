@@ -1,110 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Jaytech is a Kisumu-based web developer building fast, mobile-first business websites, landing pages, and e-commerce experiences." />
-    <meta name="theme-color" content="#080908" />
-    <meta property="og:title" content="Jaytech | Web Developer in Kisumu" />
-    <meta property="og:description" content="Modern, mobile-friendly websites built to help businesses win customers." />
-    <meta property="og:type" content="website" />
-    <title>Jaytech | Web Developer in Kisumu</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Jaytech home">JAYTECH<span>.</span></a>
-      <nav aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-      </nav>
-      <a class="header-cta" href="https://wa.me/254141558742?text=Hi%20Jaytech%2C%20I%20need%20a%20website" target="_blank" rel="noreferrer">Start a project <span aria-hidden="true">↗</span></a>
-    </header>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jaytech | Web Developer in Kisumu, Kenya</title>
+<meta name="description" content="Kisumu-based web developer building fast websites, M-Pesa checkouts, and Python-powered web apps for Kenyan businesses.">
+<meta property="og:title" content="Jaytech | Web Developer in Kisumu">
+<meta property="og:description" content="Fast websites, M-Pesa payments and Python web apps for businesses in Kenya.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Jaytech","description":"Web developer in Kisumu, Kenya","telephone":"+254141558742","areaServed":"Kenya","address":{"@type":"PostalAddress","addressLocality":"Kisumu","addressCountry":"KE"}}</script>
+<style>
+:root{--bg:#f3f6f4;--card:#fff;--ink:#0e1b1f;--mute:#4d6168;--line:#d3dfdc;--lake:#1b6b75;--sun:#e0731a;--on-sun:#fff;--code:#0e1b1f;--code-ink:#cfe5e2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1519;--card:#122229;--ink:#e8f1ef;--mute:#9bb2b4;--line:#223840;--lake:#5cc0c9;--sun:#f29a45;--on-sun:#1a0d00;--code:#07100f;--code-ink:#cfe5e2}}
+:root[data-theme="dark"]{--bg:#0b1519;--card:#122229;--ink:#e8f1ef;--mute:#9bb2b4;--line:#223840;--lake:#5cc0c9;--sun:#f29a45;--on-sun:#1a0d00;--code:#07100f;--code-ink:#cfe5e2}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:22px;text-decoration:none}
+.logo b{color:var(--sun)}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--mute);font-size:15px}
+nav a:hover,nav a:focus-visible{color:var(--ink)}
+.btn{display:inline-block;background:var(--sun);color:var(--on-sun);font-weight:600;padding:12px 22px;border-radius:999px;text-decoration:none;border:0;font:inherit;font-weight:600;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--lake);outline-offset:2px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding:48px 0 64px}
+h1{font-size:clamp(38px,6.4vw,68px);line-height:1.02;margin:0 0 18px;font-weight:800;letter-spacing:-.02em}
+h1 span{color:var(--lake)}
+.lead{color:var(--mute);max-width:46ch;margin:0 0 26px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+pre{margin:0;background:var(--code);color:var(--code-ink);border-radius:14px;padding:18px;font:13px/1.6 ui-monospace,Menlo,Consolas,monospace;overflow-x:auto;border:1px solid var(--line)}
+pre i{color:#f2a65a;font-style:normal}pre u{color:#7fd6de;text-decoration:none}pre em{color:#7d9b9c}
+.cap{font-size:14px;color:var(--mute);margin:10px 4px 0}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4.4vw,42px);line-height:1.1;margin:0 0 10px;letter-spacing:-.015em}
+.sub{color:var(--mute);margin:0 0 30px;max-width:58ch}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:0 0 6px;font-size:20px}
+.card p{margin:0;color:var(--mute);font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:14px;background:var(--bg)}
+.chip.hot{border-color:var(--sun);color:var(--sun);font-weight:600}
+.tag{display:inline-block;font-size:13px;color:var(--lake);font-weight:600;margin-bottom:8px}
+.price{font-size:32px;font-weight:800;margin:6px 0 12px}
+.price small{font-size:15px;font-weight:400;color:var(--mute)}
+.card ul{margin:0;padding-left:18px;color:var(--mute);font-size:16px}
+.card.pick{border:2px solid var(--sun)}
+ol.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+ol.steps li{counter-increment:s;border-left:3px solid var(--lake);padding:2px 0 2px 16px}
+ol.steps li::before{content:counter(s);display:block;font-weight:800;font-size:26px;color:var(--lake)}
+ol.steps b{display:block}
+ol.steps span{color:var(--mute);font-size:16px}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:600;font-size:18px}
+details p{color:var(--mute);margin:10px 0 0;max-width:62ch}
+form{display:grid;gap:12px;max-width:520px}
+label{display:grid;gap:4px;font-size:15px;color:var(--mute)}
+input,textarea{font:inherit;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:11px 12px;width:100%}
+textarea{min-height:110px;resize:vertical}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+footer{padding:28px 0 36px;border-top:1px solid var(--line);color:var(--mute);font-size:15px}
+.fade{animation:in .8s ease both}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.fade{animation:none}html{scroll-behavior:auto}}
+@media (max-width:760px){.hero,.contact{grid-template-columns:1fr}.hero{padding-top:24px}}
+</style>
+</head>
+<body>
+<div class="w">
+<header>
+  <a class="logo" href="#top">Jaytech<b>.</b></a>
+  <nav aria-label="Main">
+    <a href="#stack">Skills</a><a href="#work">Work</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
+    <a class="btn" href="https://wa.me/254141558742?text=Hi%20Jaytech%2C%20I%20need%20a%20website">Chat on WhatsApp</a>
+  </nav>
+</header>
 
-    <main id="main">
-      <section class="hero" id="top">
-        <div class="eyebrow"><span></span> WEB DEVELOPER · KISUMU, KENYA</div>
-        <p class="hero-kicker">I help businesses turn attention into customers.</p>
-        <h1>Websites built<br />to <em>win</em> work.</h1>
-        <div class="hero-bottom">
-          <p>Fast, responsive websites and web experiences for businesses that want to look credible, be found, and get more enquiries.</p>
-          <a class="button button-primary" href="https://wa.me/254141558742?text=Hi%20Jaytech%2C%20I%20need%20a%20website" target="_blank" rel="noreferrer">Let’s build your site <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="hero-orb orb-one"></div>
-        <div class="hero-orb orb-two"></div>
-      </section>
+<main id="top">
+<div class="hero">
+  <div class="fade">
+    <h1>Websites and web apps that bring in <span>customers and payments.</span></h1>
+    <p class="lead">I'm a web developer in Kisumu. I build fast mobile sites, M-Pesa checkouts, and Python-powered tools for Kenyan businesses that want to look credible and get more enquiries.</p>
+    <div class="row">
+      <a class="btn" href="https://wa.me/254141558742?text=Hi%20Jaytech%2C%20I%20need%20a%20website">Get a free quote</a>
+      <a class="btn ghost" href="#pricing">See pricing</a>
+    </div>
+  </div>
+  <div class="fade" style="animation-delay:.15s">
+<pre aria-label="Python code sample receiving an M-Pesa payment confirmation"><em># Python (FastAPI): confirm an M-Pesa payment</em>
+<u>@app.post</u>("/mpesa/callback")
+<u>async def</u> mpesa_callback(data: dict):
+    result = data["Body"]["stkCallback"]
+    <u>if</u> result["ResultCode"] == 0:
+        mark_order_paid(result["CheckoutRequestID"])
+        <i>send_whatsapp_receipt</i>(order)
+    <u>return</u> {"ok": True}</pre>
+    <p class="cap">The kind of backend behind a shop that gets paid while you sleep.</p>
+  </div>
+</div>
 
-      <section class="proof-strip" aria-label="What Jaytech offers">
-        <div><strong>Mobile first</strong><span>Built for the screens your customers actually use.</span></div>
-        <div><strong>Clear communication</strong><span>Simple updates from first idea to live launch.</span></div>
-        <div><strong>Built to launch</strong><span>Domain, hosting, forms, WhatsApp and M-Pesa support.</span></div>
-      </section>
+<section id="stack">
+  <h2>Skills that cover the whole job</h2>
+  <p class="sub">From a simple landing page to a site with payments, logins and a database, one developer handles all of it.</p>
+  <div class="grid">
+    <div class="card"><h3>Python backends</h3><p>Automation, APIs, dashboards and admin tools that save you hours every week.</p>
+      <div class="chips"><span class="chip hot">Python</span><span class="chip hot">FastAPI</span><span class="chip">Django</span><span class="chip">Flask</span></div></div>
+    <div class="card"><h3>Modern front end</h3><p>Fast, accessible pages that look right on any phone.</p>
+      <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip hot">React</span><span class="chip hot">Next.js</span><span class="chip">Tailwind</span></div></div>
+    <div class="card"><h3>Payments and messaging</h3><p>Take money and talk to customers where they already are.</p>
+      <div class="chips"><span class="chip hot">M-Pesa Daraja</span><span class="chip">WhatsApp links</span><span class="chip">Email forms</span></div></div>
+    <div class="card"><h3>Data and launch</h3><p>Reliable storage, version control and hosting with your own domain.</p>
+      <div class="chips"><span class="chip">PostgreSQL</span><span class="chip">Supabase</span><span class="chip">Git and GitHub</span><span class="chip">Vercel</span><span class="chip">SEO</span></div></div>
+  </div>
+</section>
 
-      <section class="section work-section" id="work">
-        <div class="section-intro">
-          <p class="eyebrow"><span></span> SELECTED WORK</p>
-          <h2>Proof, not promises.</h2>
-          <p>Each project starts with what the business needs customers to do next—call, message, book, or buy.</p>
-        </div>
-        <article class="project-card">
-          <div class="project-preview" aria-label="Preview of Jaytech Services Ltd website">
-            <div class="preview-bar"><i></i><i></i><i></i><b>jaytech-services-ltd.vercel.app</b></div>
-            <div class="preview-body">
-              <span>● WEBSITES + TECH SUPPORT | KISUMU</span>
-              <strong>WE BUILD<br /><mark>WEBSITES</mark><br />THAT SELL.</strong>
-              <small>Clear offer. Mobile-first design. Direct WhatsApp lead capture.</small>
-            </div>
-          </div>
-          <div class="project-details">
-            <p class="project-number">01 / LIVE PROJECT</p>
-            <h3>Jaytech Services</h3>
-            <p>A conversion-focused service website that explains the offer quickly and sends potential clients directly to WhatsApp.</p>
-            <ul class="tags" aria-label="Project features"><li>Responsive design</li><li>Lead capture</li><li>Deployment</li></ul>
-            <a class="text-link" href="https://jaytech-services-ltd.vercel.app/" target="_blank" rel="noreferrer">Visit live site <span aria-hidden="true">↗</span></a>
-          </div>
-        </article>
-        <p class="work-note">More client projects will be added here as they launch. Your project could be next.</p>
-      </section>
+<section id="services">
+  <h2>What I can build for you</h2>
+  <p class="sub">Pick a starting point. We can mix and match.</p>
+  <div class="grid">
+    <div class="card"><h3>Business websites</h3><p>Clear services, trust-building pages, and an easy way for customers to reach you.</p></div>
+    <div class="card"><h3>Online shops</h3><p>Product pages, cart and M-Pesa checkout, with orders sent straight to you.</p></div>
+    <div class="card"><h3>Booking and enquiry systems</h3><p>Hotels, salons, clinics and schools can take bookings and track requests without paperwork.</p></div>
+    <div class="card"><h3>Python automation</h3><p>Reports, data cleanup, stock or fee tracking, and scripts that replace repetitive spreadsheet work.</p></div>
+    <div class="card"><h3>Fixes and upgrades</h3><p>Mobile bugs, slow pages, redesigns, new features and ongoing support.</p></div>
+  </div>
+</section>
 
-      <section class="section services-section" id="services">
-        <div class="section-intro">
-          <p class="eyebrow"><span></span> WHAT I DO</p>
-          <h2>One developer.<br />Useful results.</h2>
-        </div>
-        <div class="service-list">
-          <article><span>01</span><h3>Business websites</h3><p>Professional sites that make your service clear and make it easy for customers to reach you.</p></article>
-          <article><span>02</span><h3>Landing pages</h3><p>Focused campaign pages for a product, event, offer, or new business idea.</p></article>
-          <article><span>03</span><h3>Website improvements</h3><p>Mobile fixes, new pages, speed improvements, design refreshes, and ongoing support.</p></article>
-        </div>
-        <div class="pricing-note"><span>Flexible ways to work</span><p>Hourly support, day-rate work, or a clear fixed price for a defined website project.</p></div>
-      </section>
+<section id="work">
+  <h2>Concept projects</h2>
+  <p class="sub">Sample builds showing how I'd solve common problems for local businesses. Real client work will be added here as it launches.</p>
+  <div class="grid">
+    <div class="card"><span class="tag">Concept: guesthouse</span><h3>Lakeside Stay</h3><p>Room gallery, availability enquiry and one-tap WhatsApp booking.</p><div class="chips"><span class="chip">Next.js</span><span class="chip">WhatsApp</span></div></div>
+    <div class="card"><span class="tag">Concept: online shop</span><h3>Kisumu Market Co.</h3><p>Product catalogue, cart and M-Pesa STK push checkout with order tracking.</p><div class="chips"><span class="chip">React</span><span class="chip">Python API</span><span class="chip">Daraja</span></div></div>
+    <div class="card"><span class="tag">Concept: school or clinic</span><h3>Admin Dashboard</h3><p>Login-protected records, search, and a monthly report built with Python.</p><div class="chips"><span class="chip">Django</span><span class="chip">PostgreSQL</span></div></div>
+    <div class="card"><span class="tag">Live</span><h3>Jaytech Services</h3><p>A conversion-focused service site that sends leads straight to WhatsApp.</p><div class="chips"><span class="chip">HTML/CSS/JS</span><span class="chip">Vercel</span></div><p style="margin-top:10px"><a href="https://jaytech-services-ltd.vercel.app/">Visit site</a></p></div>
+  </div>
+</section>
 
-      <section class="section about-section" id="about">
-        <div>
-          <p class="eyebrow"><span></span> ABOUT JAYTECH</p>
-          <h2>Good websites should make business easier.</h2>
-        </div>
-        <div class="about-copy">
-          <p>I’m a Kisumu-based web developer building clean, practical websites for businesses and organisations. I care about the details clients notice: a site that looks trustworthy, works on a phone, loads quickly, and gives customers a clear next step.</p>
-          <p>Have an idea, redesign, or a site that needs fixing? Let’s talk about it.</p>
-          <div class="skills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive design</span><span>Vercel deployment</span></div>
-        </div>
-      </section>
+<section id="pricing">
+  <h2>Clear starting prices</h2>
+  <p class="sub">Final price depends on your pages and features. You get a fixed quote before any work starts.</p>
+  <div class="grid">
+    <div class="card"><h3>Starter</h3><div class="price">KES 15,000 <small>and up</small></div>
+      <ul><li>One-page website</li><li>Mobile-first design</li><li>WhatsApp and call buttons</li><li>Hosting setup</li></ul></div>
+    <div class="card pick"><h3>Business</h3><div class="price">KES 35,000 <small>and up</small></div>
+      <ul><li>Up to 6 pages</li><li>Contact form and Google Maps</li><li>SEO setup and Google Business help</li><li>Custom domain connected</li></ul></div>
+    <div class="card"><h3>Shop or Web App</h3><div class="price">KES 80,000 <small>and up</small></div>
+      <ul><li>M-Pesa payments</li><li>Python backend and database</li><li>Admin area to manage orders</li><li>30 days of support</li></ul></div>
+  </div>
+</section>
 
-      <section class="contact-section" id="contact">
-        <p class="eyebrow"><span></span> HAVE A PROJECT?</p>
-        <h2>Let’s make your<br /><em>next click count.</em></h2>
-        <a class="button button-primary button-large" href="https://wa.me/254141558742?text=Hi%20Jaytech%2C%20I%20would%20like%20to%20discuss%20a%20website%20project" target="_blank" rel="noreferrer">Chat on WhatsApp <span aria-hidden="true">→</span></a>
-        <a class="phone-link" href="tel:+254141558742">+254 141 558 742</a>
-      </section>
-    </main>
+<section id="process">
+  <h2>How we work</h2>
+  <p class="sub">Four steps, with updates the whole way.</p>
+  <ol class="steps">
+    <li><b>Talk</b><span>Tell me what customers should do next: call, book or buy.</span></li>
+    <li><b>Quote</b><span>You get scope, price and timeline in writing.</span></li>
+    <li><b>Build</b><span>You review a live preview and ask for changes.</span></li>
+    <li><b>Launch</b><span>Domain, hosting and handover, with support after.</span></li>
+  </ol>
+</section>
 
-    <footer><a class="brand" href="#top">JAYTECH<span>.</span></a><p>Web developer · Kisumu, Kenya</p><p>© <span id="year"></span> Jaytech</p></footer>
-    <script src="script.js"></script>
-  </body>
+<section id="faq">
+  <h2>Questions I get asked</h2>
+  <details><summary>How long does a website take?</summary><p>A starter page can be ready in a few days. A business site usually takes one to two weeks. Shops and apps take longer depending on features.</p></details>
+  <details><summary>Can customers pay with M-Pesa on my site?</summary><p>Yes. I integrate M-Pesa (Daraja STK push) so customers pay from their phone and you see the order automatically.</p></details>
+  <details><summary>Will it work well on phones?</summary><p>Every site is designed for phones first, then adapted for larger screens.</p></details>
+  <details><summary>Can you update my site after launch?</summary><p>Yes. I offer hourly support or a monthly plan for changes, fixes and new pages.</p></details>
+  <details><summary>Can you automate work I do in Excel?</summary><p>Often, yes. Python can clean data, build reports and connect your files to a simple web dashboard.</p></details>
+</section>
+
+<section id="contact" class="contact">
+  <div>
+    <h2>Tell me about your project</h2>
+    <p class="sub">Send a message and I'll reply on WhatsApp, usually the same day.</p>
+    <p><a href="tel:+254141558742">+254 141 558 742</a></p>
+  </div>
+  <form id="f">
+    <label>Your name<input id="n" required autocomplete="name"></label>
+    <label>What do you need?<textarea id="m" required placeholder="e.g. A website for my guesthouse with M-Pesa booking"></textarea></label>
+    <button class="btn" type="submit">Send on WhatsApp</button>
+  </form>
+</section>
+</main>
+
+<footer>Jaytech. Web developer in Kisumu, Kenya.</footer>
+</div>
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+  e.preventDefault();
+  var t='Hi Jaytech, I am '+document.getElementById('n').value+'. '+document.getElementById('m').value;
+  window.open('https://wa.me/254141558742?text='+encodeURIComponent(t),'_blank','noopener');
+});
+</script>
+</body>
 </html>
